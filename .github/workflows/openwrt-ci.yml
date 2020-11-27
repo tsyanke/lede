@@ -92,7 +92,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ar71xx=y
           CONFIG_TARGET_ar71xx_Generic=y
-          CONFIG_TARGET_ar71xx_Generic_DEVICE_re450-v1=y          
+          CONFIG_TARGET_ar71xx_DEVICE_re450-v1=y          
           EOF
           # 固件压缩:
           cat >> .config <<EOF
