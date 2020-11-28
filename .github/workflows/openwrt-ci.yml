@@ -112,7 +112,6 @@ jobs:
          #CONFIG_PACKAGE_pptpd is not set
          #CONFIG_PACKAGE_shellsync is not set
          #CONFIG_PACKAGE_v2ray=y
-         #CONFIG_PACKAGE_vsftpd-alt is not set
           EOF
           # 固件压缩:
           cat >> .config <<EOF
