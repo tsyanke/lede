@@ -96,12 +96,12 @@ jobs:
           EOF
           # 固件压缩:
           cat >> .config <<EOF
-           CONFIG_PACKAGE_ca-certificates=y
+          CONFIG_PACKAGE_ca-certificates=y
           EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-           CONFIG_PACKAGE_luci-app-smartdns=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-smartdns=y
           EOF
           # LuCI主题:
           cat >> .config <<EOF
@@ -109,12 +109,12 @@ jobs:
           EOF
           # 常用软件包:
           cat >> .config <<EOF
-           CONFIG_PACKAGE_curl=y
-           CONFIG_PACKAGE_htop=y
-           CONFIG_PACKAGE_nano=y
-           CONFIG_PACKAGE_screen=y
-           CONFIG_PACKAGE_tree=y
-           CONFIG_PACKAGE_wget=y
+          CONFIG_PACKAGE_curl=y
+          CONFIG_PACKAGE_htop=y
+          CONFIG_PACKAGE_nano=y
+          CONFIG_PACKAGE_screen=y
+          CONFIG_PACKAGE_tree=y
+          CONFIG_PACKAGE_wget=y
           EOF
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           # cat >> .config <<EOF
