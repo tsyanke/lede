@@ -92,15 +92,77 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ar71xx=y
           CONFIG_TARGET_ar71xx_Generic=y
-          CONFIG_TARGET_ar71xx_DEVICE_re450-v1=y          
+          CONFIG_TARGET_ar71xx_generic_DEVICE_re450-v1=y
+          CONFIG_HAS_SUBTARGETS=y
+          CONFIG_HAS_DEVICES=y
+          CONFIG_TARGET_BOARD="ar71xx"
+          CONFIG_TARGET_SUBTARGET="generic"
+          CONFIG_TARGET_PROFILE="DEVICE_re450-v1"
+          CONFIG_TARGET_ARCH_PACKAGES="mips_24kc"
+          CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mno-branch-likely -mips32r2 -mtu$
+          CONFIG_CPU_TYPE="24kc"
+          CONFIG_LINUX_4_14=y
+          CONFIG_ath10k-firmware-qca988x-ct=y
+          CONFIG_base-files=y
+         #CONFIG_block-mount=y
+         #CONFIG_busybox=y
+         #CONFIG_DEFAULT_ca-certificates=y
+         #CONFIG_DEFAULT_coremark=y
+         #CONFIG_DEFAULT_ddns-scripts_aliyun=y
+         #CONFIG_DEFAULT_ddns-scripts_dnspod=y
+         #CONFIG_DEFAULT_default-settings=y
+          CONFIG_dnsmasq-full=y
+         #CONFIG_DEFAULT_dropbear=y
+          CONFIG_firewall=y
+          CONFIG_DEFAULT_fstools=y
+          CONFIG_iptables=y
+          CONFIG_DEFAULT_iwinfo=y
+          CONFIG_kmod-ath10k-ct=y
+          CONFIG_kmod-ath9k=y
+          CONFIG_kmod-gpio-button-hotplug=y
+          CONFIG_kmod-ipt-raw=y
+          CONFIG_kmod-nf-nathelper=y
+          CONFIG_kmod-nf-nathelper-extra=y
+          CONFIG_libc=y
+          CONFIG_libgcc=y
+          CONFIG_libustream-openssl=y
+          CONFIG_logd=y
+          CONFIG_luci=y
+          CONFIG_luci-app-accesscontrol=y
+          CONFIGT_luci-app-arpbind=y
+          CONFIG_luci-app-autoreboot=y
+         #CONFIG_luci-app-cpufreq=y
+          CONFIG_luci-app-ddns=y
+          CONFIG_luci-app-filetransfer=y
+          CONFIG_luci-app-nlbwmon=y
+          CONFIG_luci-app-ramfree=y
+          CONFIG_luci-app-sfe=y
+          CONFIG_luci-app-ssr-plus=y
+         #CONFIG_luci-app-unblockmusic=y
+         #CONFIG_luci-app-upnp=y
+         #CONFIG_luci-app-vlmcsd=y
+         #CONFIG_luci-app-vsftpd=y
+         #CONFIG_luci-app-webadmin=y
+         #CONFIG_DEFAULT_DEFAULT_mtd=y
+          CONFIG_netifd=y
+         #CONFIG_opkg=y
+         #CONFIG_ppp=y
+         #CONFIG_ppp-mod-pppoe=y
+         #CONFIG_swconfig=y
+          CONFIG_uboot-envtools=y
+         #CONFIG_uci=y
+         #CONFIG_uclient-fetch=y
+         #CONFIG_urandom-seed=y
+         #CONFIG_urngd=y
+         #CONFIG_wget=y
           EOF
           # 固件压缩:
           cat >> .config <<EOF
-          CONFIG_TARGET_IMAGES_GZIP=y
+          #CONFIG_TARGET_IMAGES_GZIP=y
           EOF
           # 编译UEFI固件:
           cat >> .config <<EOF
-          CONFIG_EFI_IMAGES=y
+          #CONFIG_EFI_IMAGES=y
           EOF
           # IPv6支持:
           cat >> .config <<EOF
@@ -136,12 +198,12 @@ jobs:
           #CONFIG_PACKAGE_luci-app-openvpn=y
           #CONFIG_PACKAGE_luci-app-openvpn-server=y
           #CONFIG_PACKAGE_luci-app-qbittorrent=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-ttyd=y
+          #CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+          #CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+          #CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
+          #CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+          #CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          #CONFIG_PACKAGE_luci-app-ttyd=y
           #CONFIG_PACKAGE_luci-app-v2ray-server=y
           #CONFIG_PACKAGE_luci-app-verysync=y
           #CONFIG_PACKAGE_luci-app-webadmin=y
